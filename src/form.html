@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма для конкурса</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <a class="page-header__logo-mobile">
+            <img src="#" alt="Логотип PINK" class="page-header__logo-mobile-img logo-mobile-img">
+        </a>
+        <button class="page-header__toggle-button" type="button">Открыть меню</button>
+        <nav class="page-header__nav main-navigation">
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item--mobile">
+                    <img src="#" alt="Логотип PINK" class="logo-mobile-img">
+                    <button class="main-navigation__close" type="button">Закрыть меню</button>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="index.html" class="main-navigation__link">Главная</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="photo.html" class="main-navigation__link">Фотографии</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="form.html" class="main-navigation__link">Конкурс</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="https://github.com/northlanee" class="main-navigation__link">northlanee</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page-header__content">
+            <b class="page-header__tagline">Конкурс на самое безбашенное путешествие с Пинк</b>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <h1 class="visually-hidden">Страница конкурса</h1>
+        <section class="form">
+            <h2 class="visually-hidden">Форма для ввода информации на конкурс</h2>
+            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            <form action="#" method="post" class="form__form">
+                <div class="form__user-name">
+                    <label class="form__label">
+                        Фамилия:
+                        <input type="text" class="form__input" placeholder="Укажите фамилию *">
+                    </label>
+                    <label class="form__label">
+                        Имя:
+                        <input type="text" class="form__input" placeholder="Введите ваше имя *">
+                    </label>
+                    <label class="form__label">
+                        Отчество:
+                        <input type="text" class="form__input" placeholder="Ну и отчество тоже">
+                    </label>
+                </div>
+                <fieldset class="form__application">
+                    <legend class="form__legend">С каким приложением путешествовали?</legend>
+                    <input class="form__application-radio" type="radio" name="app" value="ios" id="ios">
+                    <label for="ios">Pink для iOS</label><br>
+                    <input class="form__application-radio" type="radio" name="app" value="android" id="android">
+                    <label for="android">Pink на Android</label><br>
+                    <input class="form__application-radio" type="radio" name="app" value="windows" id="windows">
+                    <label for="windows">Windows Phone</label>
+                </fieldset>
+                <fieldset class="form__contact">
+                    <legend class="form__legend">Контактная информация</legend>
+                    <label class="form__label--bottom">
+                        Номер телефона
+                        <input type="text" class="form__input--contact" placeholder="Номер, пожалуйста">
+                    </label>
+                    <label class="form__label--bottom">
+                        Адрес почты
+                        <input type="text" class="form__input--contact" placeholder="Введите почту *">
+                    </label>
+                </fieldset>
+                <fieldset class="form__achievments">
+                    <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="selfie">
+                        Сделал селфи с акулой
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="chuck">
+                        Видел Чака Норриса
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="tower">
+                        Удержал башню
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="beach">
+                        Обгорел на пляже
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="souvenirs">
+                        Накупил сувениров
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox"  class="form__achievments-checkbox" value="hotel">
+                        Разгромил отель
+                    </label>
+                </fieldset>
+                <fieldset class="form__emotions">
+                    <legend class="form__legend">Опишите свои эмоции</legend>
+                    <label class="form__label">
+                        <textarea name="emotions" id="emotions" cols="30" rows="10" class="form__textarea"></textarea>
+                    </label>
+                </fieldset>
+                <button class="form__submit" type="submit">Отправить форму</button>
+                <p class="form__warning"><span class="form__warning-star">*</span> — обязательные для заполнения поля</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <img src="#" alt="Большой логотип" class="page-footer__logo">
+        <ul class="page-footer__social social">
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="#" alt="Twitter" class="social__img--twitter">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="#" alt="Facebook" class="social__img--facebook">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="#" alt="Youtube" class="social__img--youtube">
+                </a>
+            </li>
+        </ul>
+        <div class="page-footer__copyright">
+            <b class="page-footer__copyright-text">Разработано:</b>
+            <a href="https://github.com/northlanee" target="_blank" class="page-footer__copyright-link">
+                <img src="#" alt="northlanee" class="page-footer__copyright-img">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
